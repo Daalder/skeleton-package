@@ -3,15 +3,6 @@
   "description": "Daalder skeleton package",
   "type": "library",
   "license": "MIT",
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://repo.packagist.com/pionect/"
-    },
-    {
-      "packagist.org": false
-    }
-  ],
   "require": {
     "php": "^7.4",
     "ext-zip": "*"
@@ -22,12 +13,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Daalder\\Package\\": "src"
+      "Daalder\\SkeletonPackage\\Package\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Daalder\\Package\\Tests\\": "tests"
+      "Daalder\\SkeletonPackage\\Tests\\": "tests"
     }
   },
   "minimum-stability": "dev",
