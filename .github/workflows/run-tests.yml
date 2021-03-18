@@ -22,9 +22,9 @@ jobs:
         name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.dependency-version }}
         steps:
             - name: Set up MySQL
-                  run: |
-                      sudo /etc/init.d/mysql start
-                      mysql -e 'CREATE DATABASE ${{ env.DB_DATABASE }};' -u=root -p=root
+              run: |
+                  sudo /etc/init.d/mysql start
+                  mysql -e 'CREATE DATABASE ${{ env.DB_DATABASE }};' -u=root -p=root
 
             -   name: Checkout code
                 uses: actions/checkout@v2
